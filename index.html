@@ -1,0 +1,145 @@
+<!-- DEVELOPER: Steven Alvarado, IS117-002, Spring 2023 !-->
+<!doctype html>
+<html lang="en">
+<head>
+    <title>IS117-P4-Website</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- java script link!-->
+    <script src="js/javascript.js"></script>
+</head>
+<body class="bg-light">
+<div class="container text-center">
+    <h1 class="title">Steven Alvarado</h1>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" >My Awesome Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown Menu
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="aboutMe.html">About Me</a>
+                        <a class="dropdown-item" href="resume.html">Resume</a>
+                        <a class="dropdown-item" href="contactInfo.html">Contact Info</a>
+                        <a class="dropdown-item" href="projects.html">Projects</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutMe.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="resume.html">Resume</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="contactInfo.html">Contact Info</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/city.jpg" class="d-block w-100" alt="clouds image">
+        </div>
+        <div class="carousel-item">
+            <img src="images/dreamy.jpg" class="d-block w-100" alt="space image">
+        </div>
+        <div class="carousel-item">
+            <img src="images/sky.jpg" class="d-block w-100" alt="desert image">
+        </div>
+        <div class="carousel-item">
+            <img src="images/glare.jpg" class="d-block w-100" alt="colorful image">
+        </div>
+        <div class="carousel-item">
+            <img src="images/waves.jpg" class="d-block w-100" alt="waves image">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $('#image-carousel').carousel({
+            interval: 200,  // set the interval between slides
+            pause: 'hover',  // pause the carousel on mouse hover
+            wrap: true  // allow the carousel to loop continuously
+        });
+    });
+</script>
+
+
+<div class="container">
+    <div class="card mb-3" float-left>
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="images/clouds.jpg" class="card-img" alt="your-image">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Home Page</h5>
+                    <p class="card-text">This website is an attempt at a creative introduction to me as a person and a student. The pictures are all things related to some of my hobbies/interest. Throughout this homepage and other pages there are pictures of some things that I find interesting or that relate to the subject of the page. The site consists of this Homepage, an about me page, a resume page, a contact page, and a projects page. If you wish to visit these pages please scroll up or click the "Top" button below and use the navigation bar.   </p>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+</div>
+
+
+
+<footer class="footer mt-auto py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; 2023 Steven Alvarado IS117002</p>
+            </div>
+            <div class="col-md-6 text-right">
+                <a href="#">Terms of Use</a>
+                <span>|</span>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
